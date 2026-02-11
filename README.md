@@ -1,5 +1,5 @@
 # TechGear Pro E-commerce Product Page
-[Open](https://icybits-lab.github.io/TechGearPro)
+[Open](https://icybits-lab.github.io/E-commerce-Product-Page-DEMO/)
 
 A fully responsive, interactive e-commerce product page with image gallery, product customization, and shopping cart functionality.
 
