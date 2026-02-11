@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGear Pro | Premium Wireless Headphones</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛒</text></svg>">
+</head>
+<body>
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="container">
+            <p><i class="fas fa-shipping-fast"></i> Free Worldwide Shipping on Orders Over $50</p>
+            <p><i class="fas fa-shield-alt"></i> 30-Day Money-Back Guarantee</p>
+            <p><i class="fas fa-headset"></i> 24/7 Customer Support</p>
+        </div>
+    </div>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="nav-left">
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <a href="#" class="logo">
+                        <i class="fas fa-headphones"></i>
+                        <span>TechGear</span>
+                    </a>
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#"><i class="fas fa-store"></i> Shop</a></li>
+                        <li class="dropdown">
+                            <a href="#"><i class="fas fa-th-large"></i> Categories <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-menu">
+                                <a href="#"><i class="fas fa-headphones"></i> Headphones</a>
+                                <a href="#"><i class="fas fa-volume-up"></i> Speakers</a>
+                                <a href="#"><i class="fas fa-microphone"></i> Microphones</a>
+                                <a href="#"><i class="fas fa-gamepad"></i> Gaming</a>
+                            </div>
+                        </li>
+                        <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search products...">
+                    </div>
+                    <button class="nav-icon" id="userBtn">
+                        <i class="fas fa-user"></i>
+                    </button>
+                    <button class="nav-icon" id="wishlistBtn">
+                        <i class="fas fa-heart"></i>
+                        <span class="badge" id="wishlistCount">0</span>
+                    </button>
+                    <button class="nav-icon cart-icon" id="cartBtn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="badge" id="cartCount">0</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container main-content">
+        <!-- Product Gallery & Info -->
+        <div class="product-container">
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                <a href="#">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="#">Electronics</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="#">Audio</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>TechGear Pro Wireless Headphones</span>
+            </div>
+
+            <div class="product-details">
+                <!-- Product Gallery -->
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img id="mainProductImage" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="TechGear Pro Wireless Headphones">
+                        <button class="zoom-btn" id="zoomBtn">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                        <div class="image-badges">
+                            <span class="badge new">New</span>
+                            <span class="badge sale">25% OFF</span>
+                        </div>
+                    </div>
+                    
+                    <div class="thumbnail-list">
+                        <div class="thumbnail active" data-image="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80">
+                            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Headphones Front View">
+                        </div>
+                        <div class="thumbnail" data-image="https://images.unsplash.com/photo-1484704849700-f032a568e944?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80">
+                            <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Headphones Side View">
+                        </div>
+                        <div class="thumbnail" data-image="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80">
+                            <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Headphones in Case">
+                        </div>
+                        <div class="thumbnail" data-image="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80">
+                            <img src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Headphones on Person">
+                        </div>
+                        <div class="thumbnail video-thumbnail" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                            <i class="fas fa-play"></i>
+                            <img src="https://images.unsplash.com/photo-1505751171710-1f6d0ace5a85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Product Video">
+                        </div>
+                    </div>
+
+                    <div class="product-actions-mobile">
+                        <button class="btn btn-primary btn-block" id="addToCartMobile">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                        <button class="btn btn-outline btn-block" id="buyNowMobile">
+                            <i class="fas fa-bolt"></i> Buy Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <div class="product-header">
+                        <h1 class="product-title">TechGear Pro Wireless Headphones</h1>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="rating-value">4.5</span>
+                            </div>
+                            <a href="#reviews" class="review-count">(128 reviews)</a>
+                            <span class="sku">SKU: TG-PRO-2024</span>
+                        </div>
+                        
+                        <div class="product-price">
+                            <span class="current-price">$249.99</span>
+                            <span class="original-price">$329.99</span>
+                            <span class="discount">Save 25%</span>
+                        </div>
+                        
+                        <p class="product-description">
+                            Experience immersive sound with our premium wireless headphones. Featuring noise cancellation, 40-hour battery life, and premium comfort for all-day wear. Perfect for music lovers, gamers, and professionals.
+                        </p>
+                        
+                        <div class="product-highlights">
+                            <div class="highlight">
+                                <i class="fas fa-volume-up"></i>
+                                <span>Active Noise Cancellation</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-battery-full"></i>
+                                <span>40-Hour Battery Life</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-bluetooth"></i>
+                                <span>Bluetooth 5.3</span>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>2-Year Warranty</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Customization Options -->
+                    <div class="customization-options">
+                        <div class="option-group">
+                            <h3><i class="fas fa-palette"></i> Color</h3>
+                            <div class="color-options">
+                                <label class="color-option active" data-color="black" data-color-name="Matte Black">
+                                    <input type="radio" name="color" value="black" checked>
+                                    <span class="color-circle" style="background-color: #2c3e50;"></span>
+                                    <span class="color-name">Matte Black</span>
+                                </label>
+                                <label class="color-option" data-color="white" data-color-name="Arctic White">
+                                    <input type="radio" name="color" value="white">
+                                    <span class="color-circle" style="background-color: #ecf0f1;"></span>
+                                    <span class="color-name">Arctic White</span>
+                                </label>
+                                <label class="color-option" data-color="blue" data-color-name="Midnight Blue">
+                                    <input type="radio" name="color" value="blue">
+                                    <span class="color-circle" style="background-color: #3498db;"></span>
+                                    <span class="color-name">Midnight Blue</span>
+                                </label>
+                                <label class="color-option" data-color="red" data-color-name="Crimson Red">
+                                    <input type="radio" name="color" value="red">
+                                    <span class="color-circle" style="background-color: #e74c3c;"></span>
+                                    <span class="color-name">Crimson Red</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="option-group">
+                            <h3><i class="fas fa-cogs"></i> Model</h3>
+                            <div class="model-options">
+                                <label class="model-option active" data-model="standard" data-price="249.99">
+                                    <input type="radio" name="model" value="standard" checked>
+                                    <span class="model-name">Standard Edition</span>
+                                    <span class="model-price">$249.99</span>
+                                </label>
+                                <label class="model-option" data-model="pro" data-price="299.99">
+                                    <input type="radio" name="model" value="pro">
+                                    <span class="model-name">Pro Edition</span>
+                                    <span class="model-price">$299.99</span>
+                                    <span class="model-badge">Popular</span>
+                                </label>
+                                <label class="model-option" data-model="ultimate" data-price="349.99">
+                                    <input type="radio" name="model" value="ultimate">
+                                    <span class="model-name">Ultimate Edition</span>
+                                    <span class="model-price">$349.99</span>
+                                    <span class="model-badge">Best Value</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="option-group">
+                            <h3><i class="fas fa-gift"></i> Add Accessories</h3>
+                            <div class="accessory-options">
+                                <label class="accessory-option">
+                                    <input type="checkbox" name="accessory" value="case" data-price="29.99">
+                                    <span class="accessory-name">Premium Carrying Case</span>
+                                    <span class="accessory-price">+ $29.99</span>
+                                </label>
+                                <label class="accessory-option">
+                                    <input type="checkbox" name="accessory" value="cable" data-price="19.99">
+                                    <span class="accessory-name">Extra USB-C Charging Cable</span>
+                                    <span class="accessory-price">+ $19.99</span>
+                                </label>
+                                <label class="accessory-option">
+                                    <input type="checkbox" name="accessory" value="stand" data-price="49.99">
+                                    <span class="accessory-name">Premium Headphone Stand</span>
+                                    <span class="accessory-price">+ $49.99</span>
+                                </label>
+                                <label class="accessory-option">
+                                    <input type="checkbox" name="accessory" value="insurance" data-price="39.99">
+                                    <span class="accessory-name">2-Year Extended Warranty</span>
+                                    <span class="accessory-price">+ $39.99</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="option-group">
+                            <h3><i class="fas fa-box"></i> Quantity</h3>
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus" id="quantityMinus">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+                                <button class="quantity-btn plus" id="quantityPlus">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                                <span class="stock-status">
+                                    <i class="fas fa-check-circle"></i> 42 items in stock
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Price Summary -->
+                    <div class="price-summary">
+                        <div class="summary-item">
+                            <span>Subtotal</span>
+                            <span id="subtotalPrice">$249.99</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Shipping</span>
+                            <span id="shippingPrice">$0.00</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Tax</span>
+                            <span id="taxPrice">$20.00</span>
+                        </div>
+                        <div class="summary-item total">
+                            <span>Total</span>
+                            <span id="totalPrice">$269.99</span>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="action-buttons">
+                        <button class="btn btn-primary btn-lg" id="addToCart">
+                            <i class="fas fa-cart-plus"></i> Add to Cart
+                        </button>
+                        <button class="btn btn-secondary btn-lg" id="buyNow">
+                            <i class="fas fa-bolt"></i> Buy Now
+                        </button>
+                        <button class="btn btn-outline" id="addToWishlist">
+                            <i class="fas fa-heart"></i> Add to Wishlist
+                        </button>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="trust-badges">
+                        <div class="badge-item">
+                            <i class="fas fa-lock"></i>
+                            <span>Secure Payment</span>
+                        </div>
+                        <div class="badge-item">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Free Shipping</span>
+                        </div>
+                        <div class="badge-item">
+                            <i class="fas fa-undo"></i>
+                            <span>30-Day Returns</span>
+                        </div>
+                        <div class="badge-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>2-Year Warranty</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Tabs -->
+        <div class="product-tabs">
+            <div class="tab-header">
+                <button class="tab-btn active" data-tab="description">Description</button>
+                <button class="tab-btn" data-tab="specifications">Specifications</button>
+                <button class="tab-btn" data-tab="reviews">Reviews (128)</button>
+                <button class="tab-btn" data-tab="shipping">Shipping & Returns</button>
+                <button class="tab-btn" data-tab="faq">FAQ</button>
+            </div>
+            
+            <div class="tab-content">
+                <!-- Description Tab -->
+                <div class="tab-pane active" id="description">
+                    <div class="tab-section">
+                        <h3><i class="fas fa-music"></i> Immersive Sound Experience</h3>
+                        <p>TechGear Pro Wireless Headphones deliver studio-quality audio with our proprietary 40mm drivers. Experience crisp highs, detailed mids, and deep, powerful bass that brings your music to life.</p>
+                        <p>Advanced noise cancellation technology blocks out up to 95% of ambient noise, creating a pure listening environment whether you're on a busy commute or in a noisy office.</p>
+                    </div>
+                    
+                    <div class="tab-section">
+                        <h3><i class="fas fa-battery-full"></i> All-Day Battery Life</h3>
+                        <p>With up to 40 hours of playback on a single charge, these headphones will last through your longest workdays, travel adventures, or binge-watching sessions.</p>
+                        <p>Quick Charge technology gives you 5 hours of playback from just a 15-minute charge. The included USB-C cable ensures fast, reliable charging every time.</p>
+                    </div>
+                    
+                    <div class="tab-section">
+                        <h3><i class="fas fa-headset"></i> Premium Comfort</h3>
+                        <p>Memory foam ear cushions with premium protein leather provide exceptional comfort for extended wear. The adjustable headband ensures a perfect fit for any head size.</p>
+                        <p>Weighing just 265g, these headphones are lightweight yet durable, featuring a stainless steel frame that can withstand daily use.</p>
+                    </div>
+                    
+                    <div class="image-gallery">
+                        <img src="https://images.unsplash.com/photo-1505751171710-1f6d0ace5a85?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Headphones in Use">
+                        <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Headphone Details">
+                        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Carrying Case">
+                    </div>
+                </div>
+                
+                <!-- Specifications Tab -->
+                <div class="tab-pane" id="specifications">
+                    <div class="specs-table">
+                        <div class="spec-row">
+                            <span class="spec-label">Driver Size</span>
+                            <span class="spec-value">40mm Neodymium</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Frequency Response</span>
+                            <span class="spec-value">20Hz - 20kHz</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Impedance</span>
+                            <span class="spec-value">32 ohms</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Bluetooth Version</span>
+                            <span class="spec-value">5.3 with aptX HD</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Battery Life</span>
+                            <span class="spec-value">Up to 40 hours</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Charging Time</span>
+                            <span class="spec-value">2 hours (full charge)</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Quick Charge</span>
+                            <span class="spec-value">5 hours in 15 minutes</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Weight</span>
+                            <span class="spec-value">265g (9.3 oz)</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Microphone</span>
+                            <span class="spec-value">Built-in with noise reduction</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Water Resistance</span>
+                            <span class="spec-value">IPX4 (sweat resistant)</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="spec-label">Warranty</span>
+                            <span class="spec-value">2 years</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Reviews Tab -->
+                <div class="tab-pane" id="reviews">
+                    <div class="reviews-summary">
+                        <div class="overall-rating">
+                            <div class="rating-number">4.5</div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <div class="rating-count">Based on 128 reviews</div>
+                        </div>
+                        
+                        <div class="rating-bars">
+                            <div class="rating-bar">
+                                <span>5 stars</span>
+                                <div class="bar">
+                                    <div class="fill" style="width: 65%;"></div>
+                                </div>
+                                <span>65%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>4 stars</span>
+                                <div class="bar">
+                                    <div class="fill" style="width: 25%;"></div>
+                                </div>
+                                <span>25%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>3 stars</span>
+                                <div class="bar">
+                                    <div class="fill" style="width: 7%;"></div>
+                                </div>
+                                <span>7%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>2 stars</span>
+                                <div class="bar">
+                                    <div class="fill" style="width: 2%;"></div>
+                                </div>
+                                <span>2%</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>1 star</span>
+                                <div class="bar">
+                                    <div class="fill" style="width: 1%;"></div>
+                                </div>
+                                <span>1%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="reviews-list">
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Alex Johnson">
+                                    <div>
+                                        <h4>Alex Johnson</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="review-date">2 weeks ago</span>
+                            </div>
+                            <h3 class="review-title">Best headphones I've ever owned!</h3>
+                            <p class="review-text">The sound quality is incredible. Noise cancellation works perfectly on flights. Battery life lasts me a full week of commuting. Highly recommended!</p>
+                            <div class="review-helpful">
+                                <button><i class="fas fa-thumbs-up"></i> Helpful (42)</button>
+                                <button><i class="fas fa-thumbs-down"></i> (2)</button>
+                            </div>
+                        </div>
+                        
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer">
+                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Miller">
+                                    <div>
+                                        <h4>Sarah Miller</h4>
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="review-date">1 month ago</span>
+                            </div>
+                            <h3 class="review-title">Great for work and travel</h3>
+                            <p class="review-text">Comfortable for all-day wear. The microphone quality is excellent for video calls. Only wish the case was included instead of an add-on.</p>
+                            <div class="review-helpful">
+                                <button><i class="fas fa-thumbs-up"></i> Helpful (28)</button>
+                                <button><i class="fas fa-thumbs-down"></i> (1)</button>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-outline btn-block" id="loadMoreReviews">
+                            <i class="fas fa-plus"></i> Load More Reviews
+                        </button>
+                        
+                        <div class="write-review">
+                            <h3>Write a Review</h3>
+                            <div class="review-form">
+                                <div class="form-group">
+                                    <label>Your Rating</label>
+                                    <div class="rating-input">
+                                        <i class="far fa-star" data-rating="1"></i>
+                                        <i class="far fa-star" data-rating="2"></i>
+                                        <i class="far fa-star" data-rating="3"></i>
+                                        <i class="far fa-star" data-rating="4"></i>
+                                        <i class="far fa-star" data-rating="5"></i>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Your Review</label>
+                                    <textarea placeholder="Share your experience with this product..." rows="4"></textarea>
+                                </div>
+                                <button class="btn btn-primary">Submit Review</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Shipping Tab -->
+                <div class="tab-pane" id="shipping">
+                    <div class="tab-section">
+                        <h3><i class="fas fa-shipping-fast"></i> Shipping Information</h3>
+                        <p>We offer worldwide shipping. Most orders are processed within 24 hours and shipped within 1-2 business days.</p>
+                        
+                        <div class="shipping-methods">
+                            <div class="method">
+                                <i class="fas fa-truck"></i>
+                                <div>
+                                    <h4>Standard Shipping</h4>
+                                    <p>Free on orders over $50. Delivery in 5-7 business days.</p>
+                                </div>
+                            </div>
+                            <div class="method">
+                                <i class="fas fa-bolt"></i>
+                                <div>
+                                    <h4>Express Shipping</h4>
+                                    <p>$9.99. Delivery in 2-3 business days.</p>
+                                </div>
+                            </div>
+                            <div class="method">
+                                <i class="fas fa-rocket"></i>
+                                <div>
+                                    <h4>Next Day Delivery</h4>
+                                    <p>$19.99. Order before 2 PM for next business day delivery.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-section">
+                        <h3><i class="fas fa-undo"></i> Returns & Exchanges</h3>
+                        <p>We offer a 30-day money-back guarantee. If you're not completely satisfied with your purchase, you can return it for a full refund.</p>
+                        
+                        <div class="return-steps">
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <h4>Request Return</h4>
+                                <p>Contact our support team within 30 days of delivery.</p>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <h4>Package Items</h4>
+                                <p>Include all original packaging and accessories.</p>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <h4>Ship Back</h4>
+                                <p>Use the prepaid return label we provide.</p>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <h4>Get Refund</h4>
+                                <p>Receive your refund within 5-7 business days.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ Tab -->
+                <div class="tab-pane" id="faq">
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>How long does the battery last?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>The TechGear Pro Wireless Headphones offer up to 40 hours of playback on a single charge with noise cancellation enabled. With noise cancellation turned off, you can get up to 50 hours of battery life.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Are these headphones compatible with all devices?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, they feature Bluetooth 5.3 and are compatible with all Bluetooth-enabled devices including smartphones, tablets, computers, and smart TVs. They also include a 3.5mm audio cable for wired connection.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Is the carrying case included?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>The standard edition includes a basic fabric pouch. The premium carrying case is available as an optional accessory. The Pro and Ultimate editions include the premium case.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>What's the warranty period?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>All TechGear Pro headphones come with a 2-year manufacturer's warranty covering defects in materials and workmanship. You can also purchase extended warranty coverage as an accessory.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Can I use these for gaming?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Absolutely! The low-latency Bluetooth connection makes them excellent for gaming. The built-in microphone with noise reduction ensures clear communication with your teammates.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Products -->
+        <div class="related-products">
+            <h2><i class="fas fa-thumbs-up"></i> You Might Also Like</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Wireless Earbuds">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <h3>TechGear AirPods Pro</h3>
+                        <div class="price">$129.99 <span class="original">$159.99</span></div>
+                        <button class="btn btn-outline btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Portable Speaker">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Portable Bluetooth Speaker</h3>
+                        <div class="price">$89.99</div>
+                        <button class="btn btn-outline btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Gaming Headset">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Uphone 18</h3>
+                        <div class="price">$79.99 <span class="original">$99.99</span></div>
+                        <button class="btn btn-outline btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Smart Watch">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-info">
+                        <h3>Vintage Camera</h3>
+                        <div class="price">$199.99</div>
+                        <button class="btn btn-outline btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3><i class="fas fa-shopping-cart"></i> Shopping Cart</h3>
+            <button class="close-cart">&times;</button>
+        </div>
+        
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Your cart is empty</p>
+                <a href="#" class="btn btn-outline">Continue Shopping</a>
+            </div>
+        </div>
+        
+        <div class="cart-summary">
+            <div class="summary-item">
+                <span>Subtotal</span>
+                <span id="cartSubtotal">$0.00</span>
+            </div>
+            <div class="summary-item">
+                <span>Shipping</span>
+                <span id="cartShipping">$0.00</span>
+            </div>
+            <div class="summary-item">
+                <span>Tax</span>
+                <span id="cartTax">$0.00</span>
+            </div>
+            <div class="summary-item total">
+                <span>Total</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            
+            <button class="btn btn-primary btn-block" id="checkoutBtn">
+                <i class="fas fa-lock"></i> Proceed to Checkout
+            </button>
+            <button class="btn btn-outline btn-block" id="continueShopping">
+                Continue Shopping
+            </button>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkoutModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-shopping-bag"></i> Checkout</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="demo-notice">
+                    <i class="fas fa-info-circle"></i>
+                    <h3>This is a Demo Page</h3>
+                    <p>This e-commerce product page is for demonstration purposes only. No actual purchases can be made through this interface.</p>
+                    <p>The purpose of this demo is to showcase:</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Responsive product page design</li>
+                        <li><i class="fas fa-check"></i> Interactive image gallery functionality</li>
+                        <li><i class="fas fa-check"></i> Product customization options</li>
+                        <li><i class="fas fa-check"></i> Shopping cart implementation</li>
+                        <li><i class="fas fa-check"></i> Real-time price calculations</li>
+                    </ul>
+                    <div class="demo-actions">
+                        <button class="btn btn-primary" id="closeCheckout">Close Checkout</button>
+                        <button class="btn btn-outline" id="viewCart">View Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Zoom Modal -->
+    <div class="modal zoom-modal" id="zoomModal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <img id="zoomedImage" src="" alt="Product Image">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3><i class="fas fa-headphones"></i> TechGear</h3>
+                    <p>Premium audio products for music lovers, gamers, and professionals. Experience sound like never before.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#">Headphones</a></li>
+                        <li><a href="#">Speakers</a></li>
+                        <li><a href="#">Earbuds</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Gaming</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Warranty</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for exclusive deals and new product announcements.</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email address">
+                        <button class="btn btn-primary">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechGear. All rights reserved. | This is a demo e-commerce project for portfolio purposes.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
